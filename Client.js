@@ -30,5 +30,7 @@ var req = http.request(options,responce).on('error',onError);
 req.write(postData);
 req.end();
 };
-
-postMethod('localhost','hi this is Ankur');
+var text=process.argv.slice(2).join(' ').trim();
+if(!text)
+  text="hello this is testing";//Default Message
+postMethod('localhost',text); 
