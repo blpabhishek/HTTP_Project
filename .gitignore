@@ -28,3 +28,4 @@ node_modules
 *.jpeg
 .DS_Store
 .gitignore
+*.txt
